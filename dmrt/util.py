@@ -1,5 +1,5 @@
 from PIL import Image, ImageOps
-import io
+from io import BytesIO
 import os
 from wq.io.util import guess_type
 import subprocess
@@ -62,7 +62,7 @@ def generate_image(image, size):
     except OSError:
         pass
     img.save(os.path.join(tdir, name), 'JPEG')
-    data = io.StringIO()
+    data = BytesIO()
     img.save(data, 'JPEG')
     data.seek(0)
     return data
