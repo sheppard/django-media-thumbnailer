@@ -43,7 +43,6 @@ setup(
     description=LONG_DESCRIPTION.strip(),
     long_description=parse_markdown_readme(),
     install_requires=[
-        'djangorestframework',
         'Pillow',
         'wq.io',
     ],
@@ -61,6 +60,5 @@ setup(
     test_suite='tests',
     tests_require=[
         'Django',
-        'pypng'
     ]
 )

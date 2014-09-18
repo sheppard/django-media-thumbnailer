@@ -1,8 +1,7 @@
 from django.conf.urls import patterns, url
 
-from wq.db.rest import app
-from .views import GenerateView
+from .views import generate
 
 urlpatterns = patterns('',
-    url(r'^(?P<size>\d+)/(?P<image>.+)$', GenerateView.as_view()),
+    url(r'^(?P<size>\d+)/(?P<image>.+)$', generate),
 )

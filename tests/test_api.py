@@ -1,9 +1,9 @@
-from rest_framework.test import APITestCase
+from django.test import TestCase
 from dmrt.util import generate_image
 from PIL import Image
 
 
-class ThumbnailTestCase(APITestCase):
+class ThumbnailTestCase(TestCase):
     # Landscape: 1024x768 (4:3)
     def test_landscape_square(self):
         img = Image.open(generate_image("landscape.png", 200))
