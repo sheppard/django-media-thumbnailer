@@ -1,5 +1,5 @@
 from django.test import TestCase
-from dmrt.util import generate_image
+from dmt.util import generate_image
 from PIL import Image
 
 

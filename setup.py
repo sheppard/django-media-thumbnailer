@@ -33,13 +33,13 @@ def parse_markdown_readme():
 
 
 setup(
-    name='dmrt',
+    name='dmt',
     version='0.2.0',
     author='S. Andrew Sheppard',
     author_email='andrew@wq.io',
     url='https://github.com/wq/django-mod-rewrite-thumbnails',
     license='MIT',
-    packages=['dmrt'],
+    packages=['dmt'],
     description=LONG_DESCRIPTION.strip(),
     long_description=parse_markdown_readme(),
     install_requires=[
